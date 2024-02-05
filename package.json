@@ -7,6 +7,10 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
+    "clean": "cd android && gradlew clean",
+    "build": "cd android && gradlew app:bundleRelease",
+    "build-apk": "cd android && gradlew app:assembleRelease",
+    "debug-build": "cd android && gradlew assembleDebug",
     "test": "jest"
   },
   "dependencies": {
